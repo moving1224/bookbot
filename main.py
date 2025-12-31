@@ -1,4 +1,5 @@
 from stats import wordcount
+from stats import charcount
 
 def get_book_text(path_to_file):
 	# do something with f (the file) here
@@ -13,5 +14,7 @@ def main():
 	text = get_book_text(path_to_file)
 	words = wordcount(text)
 	print(f"Found {len(words)} total words")
+	charcountdic = charcount(text)
+	print(charcountdic)
 
 main()
